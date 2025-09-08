@@ -1,1 +1,327 @@
-これは Azure に関して包括的に学ぶことができるWebページです 黎明期のHTTTP1.1の時代の古のインターネット風にGitHubにつくらせます
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🌐 Microsoft Azure 完全ガイド 🌐 - インターネット黎明期風</title>
+    <style>
+        body {
+            background: #000080 url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100"><defs><pattern id="stars" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1" fill="yellow"/><circle cx="12" cy="8" r="0.5" fill="white"/><circle cx="18" cy="15" r="0.8" fill="yellow"/></pattern></defs><rect width="100%" height="100%" fill="url(%23stars)"/></svg>') repeat;
+            color: #FFFF00;
+            font-family: "Comic Sans MS", cursive, Arial;
+            margin: 0;
+            padding: 10px;
+            animation: bgShift 10s infinite linear;
+        }
+        
+        @keyframes bgShift {
+            0% { background-position: 0 0; }
+            100% { background-position: 100px 100px; }
+        }
+        
+        .main-table {
+            width: 100%;
+            border: 3px solid #FF00FF;
+            background: linear-gradient(45deg, #800080, #008000, #FF4500);
+            animation: colorShift 3s infinite alternate;
+        }
+        
+        @keyframes colorShift {
+            0% { filter: hue-rotate(0deg); }
+            100% { filter: hue-rotate(360deg); }
+        }
+        
+        .header {
+            background: #FF0000;
+            color: #FFFF00;
+            text-align: center;
+            padding: 20px;
+            border: 5px solid #00FFFF;
+            text-shadow: 3px 3px 0px #000000;
+        }
+        
+        .content {
+            background: #FFFFFF;
+            color: #000000;
+            padding: 15px;
+            border: 2px solid #FF00FF;
+        }
+        
+        .sidebar {
+            background: #00FF00;
+            color: #FF0000;
+            padding: 15px;
+            border: 2px solid #0000FF;
+            font-weight: bold;
+        }
+        
+        .footer {
+            background: #FFFF00;
+            color: #FF0000;
+            text-align: center;
+            padding: 10px;
+            border: 3px solid #800080;
+        }
+        
+        .blink {
+            animation: blink 1s infinite;
+        }
+        
+        @keyframes blink {
+            0%, 50% { opacity: 1; }
+            51%, 100% { opacity: 0; }
+        }
+        
+        .service-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 10px 0;
+        }
+        
+        .service-table td, .service-table th {
+            border: 2px solid #FF00FF;
+            padding: 8px;
+            background: #FFFFCC;
+        }
+        
+        .service-table th {
+            background: #FF6600;
+            color: #FFFFFF;
+            font-weight: bold;
+        }
+        
+        .gif-placeholder {
+            width: 100px;
+            height: 100px;
+            background: linear-gradient(45deg, #FF0000, #00FF00, #0000FF, #FFFF00);
+            border: 3px solid #000;
+            animation: spin 2s infinite linear, pulse 1s infinite alternate;
+            display: inline-block;
+            margin: 5px;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            100% { transform: scale(1.1); }
+        }
+        
+        .rainbow-text {
+            background: linear-gradient(45deg, #FF0000, #FF7F00, #FFFF00, #00FF00, #0000FF, #4B0082, #9400D3);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            animation: rainbow 2s infinite linear;
+        }
+        
+        @keyframes rainbow {
+            0% { filter: hue-rotate(0deg); }
+            100% { filter: hue-rotate(360deg); }
+        }
+        
+        marquee {
+            background: #FF00FF;
+            color: #FFFF00;
+            padding: 5px;
+            border: 2px solid #00FFFF;
+            margin: 10px 0;
+        }
+        
+        .counter {
+            background: #000000;
+            color: #00FF00;
+            padding: 5px;
+            border: 1px solid #00FF00;
+            font-family: "Courier New", monospace;
+        }
+        
+        a {
+            color: #FF00FF;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        a:hover {
+            color: #00FFFF;
+            text-decoration: underline;
+            background: #FFFF00;
+        }
+        
+        .under-construction {
+            background: #FFFF00;
+            color: #FF0000;
+            text-align: center;
+            padding: 10px;
+            border: 3px solid #000000;
+            font-weight: bold;
+            animation: blink 0.5s infinite;
+        }
+    </style>
+</head>
+<body>
+    <table class="main-table" cellspacing="0" cellpadding="0">
+        <tr>
+            <td colspan="2" class="header">
+                <h1 class="rainbow-text">🌟 Microsoft Azure 完全ガイド 🌟</h1>
+                <h2 class="blink">HTTP/1.1 黎明期のインターネット風デザイン</h2>
+                <div class="gif-placeholder"></div>
+                <div class="gif-placeholder"></div>
+                <div class="gif-placeholder"></div>
+            </td>
+        </tr>
+        
+        <tr>
+            <td colspan="2">
+                <marquee behavior="scroll" direction="left" scrollamount="5">
+                    🎉 ようこそAzureの世界へ！🎉 クラウドコンピューティングの最前線をお楽しみください！ 🚀✨🌈
+                </marquee>
+            </td>
+        </tr>
+        
+        <tr>
+            <td class="content" width="70%">
+                <h2 style="color: #FF0000; text-shadow: 2px 2px #FFFF00;">🔥 Microsoft Azure とは？ 🔥</h2>
+                <p><strong>Microsoft Azure</strong>は、マイクロソフトが提供する包括的なクラウドコンピューティングプラットフォームです。200以上のサービスを提供し、世界60以上のリージョンで運用されています。</p>
+                
+                <div class="under-construction">
+                    🚧 UNDER CONSTRUCTION 🚧<br>
+                    最新情報を随時更新中！
+                </div>
+                
+                <h3 style="color: #0000FF; background: #FFFF00; padding: 5px;">⭐ 主要サービス一覧 ⭐</h3>
+                
+                <table class="service-table">
+                    <tr>
+                        <th>🖥️ サービス名</th>
+                        <th>📝 説明</th>
+                        <th>💰 特徴</th>
+                    </tr>
+                    <tr>
+                        <td><strong>Azure Virtual Machines</strong></td>
+                        <td>クラウド上の仮想マシンサービス</td>
+                        <td>Windows/Linux対応、スケーラブル</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Azure App Service</strong></td>
+                        <td>Webアプリケーションホスティング</td>
+                        <td>PaaS、自動スケール、CI/CD統合</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Azure Functions</strong></td>
+                        <td>サーバーレスコンピューティング</td>
+                        <td>イベント駆動、従量課金</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Azure Storage</strong></td>
+                        <td>クラウドストレージサービス</td>
+                        <td>Blob、ファイル、キュー、テーブル</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Azure SQL Database</strong></td>
+                        <td>マネージドSQLデータベース</td>
+                        <td>高可用性、自動バックアップ</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Azure Kubernetes Service</strong></td>
+                        <td>マネージドKubernetesサービス</td>
+                        <td>コンテナオーケストレーション</td>
+                    </tr>
+                </table>
+                
+                <h3 style="color: #FF00FF; background: #00FFFF; padding: 5px;">🌟 Azure の特徴 🌟</h3>
+                <ul>
+                    <li><span class="blink">🔐 セキュリティ</span>: エンタープライズグレードのセキュリティ</li>
+                    <li><span class="rainbow-text">🌍 グローバル</span>: 世界規模のデータセンター</li>
+                    <li><span class="blink">💡 AI・ML</span>: 人工知能・機械学習サービス統合</li>
+                    <li><span class="rainbow-text">🔄 DevOps</span>: 開発・運用ツールの豊富な連携</li>
+                    <li><span class="blink">💰 コスト効率</span>: 従量課金と予約インスタンス</li>
+                </ul>
+                
+                <h3 style="color: #800080; background: #00FF00; padding: 5px;">🚀 人気のAzureサービス詳細 🚀</h3>
+                
+                <h4 style="color: #FF0000;">💻 Azure Virtual Machines (VM)</h4>
+                <p>Windows ServerやLinuxの仮想マシンを数分で展開可能。B、D、F、Hシリーズなど用途別のVMサイズを提供。</p>
+                
+                <h4 style="color: #0000FF;">🌐 Azure App Service</h4>
+                <p>.NET、Java、PHP、Python、Node.jsアプリをサポート。GitHubとの連携でCI/CD実現。</p>
+                
+                <h4 style="color: #008000;">⚡ Azure Functions</h4>
+                <p>イベント駆動型のサーバーレス関数。HTTP、タイマー、Blobトリガーなど多彩な起動方法。</p>
+                
+                <h4 style="color: #FF6600;">📦 Azure Storage</h4>
+                <ul>
+                    <li><strong>Blob Storage</strong>: オブジェクトストレージ</li>
+                    <li><strong>File Storage</strong>: ファイル共有</li>
+                    <li><strong>Queue Storage</strong>: メッセージキュー</li>
+                    <li><strong>Table Storage</strong>: NoSQLデータストア</li>
+                </ul>
+                
+                <marquee behavior="alternate" direction="right" scrollamount="3">
+                    🎊 Azure で未来を構築しよう！ 🎊
+                </marquee>
+            </td>
+            
+            <td class="sidebar" width="30%">
+                <h3 style="text-align: center;">🎯 クイックナビ 🎯</h3>
+                <div class="gif-placeholder"></div>
+                
+                <h4>📊 Azure 価格情報</h4>
+                <p>従量課金制で使った分だけお支払い！</p>
+                
+                <h4>🔧 開発ツール</h4>
+                <ul>
+                    <li>Visual Studio Code</li>
+                    <li>Azure CLI</li>
+                    <li>PowerShell</li>
+                    <li>Azure Portal</li>
+                </ul>
+                
+                <h4 class="blink">🎓 学習リソース</h4>
+                <ul>
+                    <li>Microsoft Learn</li>
+                    <li>Azure ドキュメント</li>
+                    <li>Azure 認定資格</li>
+                    <li>ハンズオンラボ</li>
+                </ul>
+                
+                <div class="counter">
+                    <h4>📈 サイト統計</h4>
+                    訪問者数: 🎰 <span class="blink">999999</span><br>
+                    最終更新: 2024年<br>
+                    💖 ありがとう！
+                </div>
+                
+                <h4>🌈 Azure 認定資格</h4>
+                <ul>
+                    <li class="rainbow-text">AZ-900 (基礎)</li>
+                    <li class="blink">AZ-104 (管理者)</li>
+                    <li class="rainbow-text">AZ-204 (開発者)</li>
+                    <li class="blink">AZ-303/304 (アーキテクト)</li>
+                </ul>
+                
+                <div class="gif-placeholder"></div>
+                
+                <h4>🔗 リンク集</h4>
+                <p><a href="#">Azure ポータル</a></p>
+                <p><a href="#">料金計算ツール</a></p>
+                <p><a href="#">サポート</a></p>
+                <p><a href="#">コミュニティ</a></p>
+            </td>
+        </tr>
+        
+        <tr>
+            <td colspan="2" class="footer">
+                <marquee behavior="scroll" direction="right" scrollamount="4">
+                    🌟 Created with ❤️ in the spirit of GeoCities 🌟 Best viewed in Netscape Navigator 4.0+ 🌟
+                </marquee>
+                <p><span class="blink">Copyright © 2024</span> | <span class="rainbow-text">Powered by Azure ☁️</span> | <span class="blink">Made with HTML Tables 📊</span></p>
+                <div class="gif-placeholder"></div>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
